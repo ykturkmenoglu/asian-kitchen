@@ -1,0 +1,85 @@
+body {
+  font-family: 'Zilla Slab', serif;
+  background-color: #f8f9fa; /* Çok açık gri arka plan */
+}
+
+.custom-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px; /* Sağ ve sol boşluk miktarını ayarlamak için padding */
+  padding-right: 20px; /* Sağ ve sol boşluk miktarını ayarlamak için padding */
+}
+
+.title h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Great Vibes', cursive;
+  color: red;
+  font-size: 3rem; /* Display boyutunu artırmak için font büyüklüğü artırıldı */
+}
+
+.btn-container {
+  margin-bottom: 30px; /* Button ve menü arasındaki boşluk artırıldı */
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 4px solid black;
+  border-radius: 8px; /* Köşeleri yuvarlat */
+}
+
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: red; /* menu-title yazıları kırmızı */
+}
+
+.menu-title h4 {
+  margin: 0;
+}
+
+.menu-title .title {
+  text-align: left; /* Başlığı sola yasla */
+}
+
+.menu-title .price {
+  text-align: right; /* Fiyatı sağa yasla */
+}
+
+.menu-desc {
+  margin-top: 10px; /* Daha aşağıda yap */
+  border-top: 1px solid black; /* İnce çizgi */
+  padding-top: 3px; /* Çizgiyi yukarıda yap */
+}
+
+@media (max-width: 768px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item img {
+    margin-bottom: 10px;
+  }
+
+  .menu-title h4 {
+    flex: none; /* Küçük ekranlarda flex özelliğini kaldır */
+  }
+}
